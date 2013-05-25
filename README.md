@@ -37,4 +37,11 @@ You can replace `aes-256-cbc` with any of the ciphers listed when executing
 the command `openssl list-cipher-commands`.
 
 
+Thanks
+------
+
+[Zach Holman][2] for the [installer][3] and other goodies.
+
 [1]: http://martin.kleppmann.com/2013/05/24/improving-security-of-ssh-private-keys.html
+[2]: https://github.com/holman
+[3]: https://github.com/holman/dotfiles/blob/master/script/bootstrap
