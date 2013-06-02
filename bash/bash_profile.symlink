@@ -1,0 +1,15 @@
+PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+source ~/.alias
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
+source $HOME/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUPSTREAM=verbose
+GIT_PS1_SHOWCOLORHINTS=1
+PROMPT_COMMAND='__git_ps1 "\e[0;30m\h \e[1;93m\w\e[0m" "\\\$ "'
