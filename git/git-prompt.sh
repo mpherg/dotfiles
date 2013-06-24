@@ -79,6 +79,15 @@
 # GIT_PS1_SHOWCOLORHINTS to a nonempty value. The colors are based on
 # the colored output of "git status -sb".
 
+
+# If there is already a git prompt file, run that one
+if [ -s "$HOME/.rvm/etc/bash_completion.d/git-prompt.sh" ]
+then
+	. "$HOME/.rvm/etc/bash_completion.d/git-prompt.sh"
+	return
+fi
+
+
 # __gitdir accepts 0 or 1 arguments (i.e., location)
 # returns location of .git repo
 __gitdir ()

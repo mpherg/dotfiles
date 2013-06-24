@@ -24,6 +24,16 @@
 #    3) Consider changing your PS1 to also show the current branch,
 #       see git-prompt.sh for details.
 
+
+# If there is an existing git-completion script, run it and return
+if [ -s "$HOME/.rvm/etc/bash_completion.d/git-completion.bash" ]
+then
+	. "$HOME/.rvm/etc/bash_completion.d/git-completion.bash"
+	return
+fi
+
+# If we get here, there isn't an existing git-completion script found
+
 case "$COMP_WORDBREAKS" in
 *:*) : great ;;
 *)   COMP_WORDBREAKS="$COMP_WORDBREAKS:"
