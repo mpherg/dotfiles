@@ -27,3 +27,7 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+" Use Powerline fonts
+set guifont="Droid Sans Mono for Powerline:h11"
+let g:airline_powerline_fonts = 1
