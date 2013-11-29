@@ -47,6 +47,28 @@ link_files () {
   success "linked $1 to $2"
 }
 
+install_fonts () {
+  info "installing fonts"
+  if [ "$(uname -s)" == "Darwin" ]
+  then
+    font_dir="$HOME/Library/Fonts"
+  else
+    font_dir="$HOME/.fonts"
+  fi
+
+  # fonts have spaces in their filenames
+  SAVEIFS=$IFS
+  IFS=$(echo -en "\n\b")
+
+  for font in `find $DOTFILES_ROOT/fonts -iname \*.ttf -o -iname \*.otf`
+  do
+    cp -f "$font" "$font_dir"
+    success "installed font $font"
+  done
+
+  IFS=$SAVEIFS
+}
+
 install_dotfiles () {
   info 'installing dotfiles'
 
@@ -112,6 +134,8 @@ install_dotfiles () {
     fi
 
   done
+
+  install_fonts
 }
 
 # setup_gitconfig
