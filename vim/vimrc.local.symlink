@@ -31,3 +31,6 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 " Use Powerline fonts
 set guifont="Droid Sans Mono for Powerline:h11"
 let g:airline_powerline_fonts = 1
+
+" Enable gitgutter
+let g:gitgutter_enabled = 1
