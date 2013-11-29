@@ -5,3 +5,4 @@ else
 fi
 
 alias ll='ls -al'
+alias grep='grep --color'
