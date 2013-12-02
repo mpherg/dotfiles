@@ -5,6 +5,7 @@
 
 # Ensure that /usr/local/bin comes first, and add our own bin
 PATH="/usr/local/bin:$PATH:$HOME/bin"
+PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
 
 # Get all of our .bash files
 for f in `find $HOME/.dotfiles -name '*.bash'`
