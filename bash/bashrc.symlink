@@ -13,3 +13,6 @@ do
 	echo "Sourcing $f"
 	source $f
 done
+
+# Get boxen environment
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
