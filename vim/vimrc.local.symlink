@@ -34,3 +34,7 @@ let g:airline_powerline_fonts = 1
 
 " Enable gitgutter
 let g:gitgutter_enabled = 1
+
+" Set up clang-format
+map <C-I> :pyf ~/.vim/clang-format.py<CR>
+imap <C-I> <ESC>:pyf ~/.vim/clang-format.py<CR>
