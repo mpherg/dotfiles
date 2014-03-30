@@ -6,3 +6,4 @@ fi
 
 alias ll='ls -al'
 alias grep='grep --color'
+alias less='less -r'
