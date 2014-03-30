@@ -4,13 +4,12 @@
 [[ "$-" != *i* ]] && return
 
 # Ensure that /usr/local/bin comes first, and add our own bin(s)
-PATH="/usr/local/bin:$PATH:$HOME/bin:$HOME/.dotfiles/bin"
+PATH="/usr/local/bin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
 PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
 
 # Get all of our .bash files
 for f in `find $HOME/.dotfiles -name '*.bash'`
 do
-	echo "Sourcing $f"
 	source $f
 done
 
