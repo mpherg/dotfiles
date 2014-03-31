@@ -1,7 +1,18 @@
 #!/bin/bash
 set -e
 if hash pygmentize 2>/dev/null; then
-  pygmentize $1 2>/dev/null || cat $1
+  if ! pygmentize $1 2>/dev/null; then
+    case "`file $1`" in
+      *Bourne* )
+        pygmentize -l bash $1 2>/dev/null ;;
+
+      *C\ shell* )
+        pygmentize -l csh $1 2>/dev/null ;;
+
+      * )
+        cat $1 ;;
+    esac
+  fi
 else
   cat $1
 fi
