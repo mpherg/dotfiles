@@ -16,3 +16,5 @@ helper = /opt/boxen/bin/boxen-git-credential
 excludesfile = /opt/boxen/config/git/gitignore
 [grep]
 	lineNumber = true
+[push]
+	default = simple
