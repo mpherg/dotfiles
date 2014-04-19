@@ -9,6 +9,9 @@ if hash pygmentize 2>/dev/null; then
       *C\ shell* )
         pygmentize -l csh $1 2>/dev/null ;;
 
+      *perl* )
+        pygmentize -l perl $1 2>/dev/null ;;
+
       * )
         cat $1 ;;
     esac
