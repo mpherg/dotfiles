@@ -12,6 +12,9 @@ if hash pygmentize 2>/dev/null; then
       *perl* )
         pygmentize -l perl $1 2>/dev/null ;;
 
+      *zsh* )
+        pygmentize -l zsh $1 2>/dev/null ;;
+
       * )
         cat $1 ;;
     esac
