@@ -7,6 +7,13 @@
 PATH="/usr/local/bin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
 PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
 
+# Don't put duplicates in history
+HISTCONTROL=ignoreboth
+# Append to this history file. Please don't overwrite it.
+shopt -s histappend
+HISTSIZE=10000
+HISTFILESIZE=10000
+
 # Get boxen environment
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
