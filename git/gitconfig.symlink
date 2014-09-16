@@ -2,7 +2,8 @@
 	ui = auto
 [user]
 	name = Michael Ferguson
-	email = mpherg@hotmail.com
+  email = mpherg@gmail.com
+  signingkey = C85F1256
 [alias]
 	st = status
 	g = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)%C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset) %C(green)(%ar)%C(reset)' --all
