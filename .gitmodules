@@ -1,3 +1,6 @@
 [submodule "external/powerline"]
 	path = external/powerline
 	url = https://github.com/Lokaltog/powerline.git
+[submodule "zsh"]
+	path = zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
