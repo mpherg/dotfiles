@@ -4,8 +4,8 @@
 [[ "$-" != *i* ]] && return
 
 # Ensure that /usr/local/bin comes first, and add our own bin(s)
-PATH="/usr/local/bin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
-PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
+#PATH="/usr/local/bin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
+#PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
 
 # Don't put duplicates in history
 HISTCONTROL=ignoreboth
