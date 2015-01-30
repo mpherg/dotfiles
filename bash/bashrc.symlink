@@ -5,7 +5,6 @@
 
 # Ensure that /usr/local/bin comes first, and add our own bin(s)
 #PATH="/usr/local/bin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
-#PATH="$PATH:$HOME/.dotfiles/external/powerline/scripts"
 
 # Don't put duplicates in history
 HISTCONTROL=ignoreboth
@@ -16,10 +15,6 @@ HISTFILESIZE=10000
 
 # Get boxen environment
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
-# Find and execute archey
-archey_path=$(which archey)
-[ -f "$archey_path" ] && . "$archey_path" -c
 
 # Get all of our .bash files
 for f in `find $HOME/.dotfiles -name '*.bash'`
