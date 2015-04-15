@@ -19,3 +19,6 @@ excludesfile = /opt/boxen/config/git/gitignore
 	lineNumber = true
 [push]
 	default = simple
+
+[hub]
+protocol = https
