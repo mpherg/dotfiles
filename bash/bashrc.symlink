@@ -21,3 +21,6 @@ for f in `find $HOME/.dotfiles -name '*.bash'`
 do
 	source $f
 done
+
+# Get my github token into my environment
+[ -f $HOME/.github-token ] && source $HOME/.github-token
