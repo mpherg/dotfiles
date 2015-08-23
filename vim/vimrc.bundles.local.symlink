@@ -1,1 +1,3 @@
 Bundle 'bling/vim-airline'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'moll/vim-node'
