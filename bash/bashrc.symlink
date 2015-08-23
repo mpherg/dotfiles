@@ -24,3 +24,6 @@ done
 
 # Get my github token into my environment
 [ -f $HOME/.github-token ] && source $HOME/.github-token
+
+# Set JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
