@@ -30,7 +30,7 @@ command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
 " Use Powerline fonts
-set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h11
+set guifont=12pt\ Literation\ Mono\ Powerline:h11
 let g:airline_powerline_fonts = 1
 
 " Enable gitgutter
