@@ -4,14 +4,14 @@ set nocursorline " don't highlight current line
 inoremap jj <ESC>
 
 " gui settings
-if ($TERM_PROGRAM == 'iTerm.app')
-  set background=dark
-  let g:solarized_termcolors=16
-  let g:solarized_termtrans=1
-  colorscheme solarized
-else
-  colorscheme desert
-endif
+" if ($TERM_PROGRAM == 'iTerm.app')
+"   set background=dark
+"   let g:solarized_termcolors=16
+"   let g:solarized_termtrans=1
+"   colorscheme solarized
+" else
+"   colorscheme desert
+" endif
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
@@ -39,3 +39,18 @@ let g:gitgutter_enabled = 1
 " Set up clang-format
 map <C-I> :pyf ~/.vim/clang-format.py<CR>
 imap <C-I> <ESC>:pyf ~/.vim/clang-format.py<CR>
+
+" Allow doxygen triple-slash comments
+autocmd Filetype c,cpp set comments^=:///
+
+" set up pencil
+augroup pencil
+  autocmd!
+  " Autodetect hard/soft line breaks
+  autocmd FileType markdown,mkd,mk,tex call pencil#init()
+
+  " Force hard line breaks in text files
+  autocmd FileType text,c,cpp          call pencil#init({'wrap': 'hard'})
+augroup END
+
+"set spell spelllang=en_us
