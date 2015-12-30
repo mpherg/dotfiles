@@ -3,7 +3,7 @@ set -e
 if hash pygmentize 2>/dev/null; then
   if ! pygmentize $1 2>/dev/null; then
     case "`file $1`" in
-      *Bourne* )
+      *Bourne*|*bash* )
         pygmentize -l bash $1 2>/dev/null ;;
 
       *C\ shell* )
