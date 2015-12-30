@@ -114,5 +114,5 @@ augroup pencil
   autocmd FileType markdown,mkd,mk,tex call pencil#init()
 
   " Force hard line breaks in text files
-  autocmd FileType text,c,cpp          call pencil#init({'wrap': 'hard'})
+  autocmd FileType text	  call pencil#init({'wrap': 'hard'})
 augroup END
