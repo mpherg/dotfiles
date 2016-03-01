@@ -88,3 +88,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Load Docker environment variables
 eval "$(docker-machine env local)"
+
+# Set JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
