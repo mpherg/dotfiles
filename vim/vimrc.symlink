@@ -116,3 +116,6 @@ augroup pencil
   " Force hard line breaks in text files
   autocmd FileType text	  call pencil#init({'wrap': 'hard'})
 augroup END
+
+" Markdown stuff
+let g:vim_markdown_folding_disabled = 1

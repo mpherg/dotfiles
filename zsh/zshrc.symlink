@@ -86,8 +86,5 @@ source $ZSH/oh-my-zsh.sh
 # Get Boxen stuff working
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
-# Load Docker environment variables
-eval "$(docker-machine env local)"
-
 # Set JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)

@@ -1,12 +1,10 @@
-mpherg's dotfiles
-=================
+# mpherg's dotfiles
 
 These are my "dotfiles," or the private files that go into a user's home
 directory that set up a shell environment.
 
 
-A Note About SSH Private Keys
------------------------------
+## A Note About SSH Private Keys
 
 `ssh-keygen`'s default behavior for encrypting SSH private keys has some
 weaknesses. Here's how the AES key is derived from the password:
@@ -37,8 +35,7 @@ You can replace `aes-256-cbc` with any of the ciphers listed when executing
 the command `openssl list-cipher-commands`.
 
 
-Thanks
-------
+## Thanks
 
 [Zach Holman][2] for the [installer][3] and other goodies.
 
