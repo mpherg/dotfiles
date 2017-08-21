@@ -1,27 +1,25 @@
 [color]
-  ui = auto
+	ui = auto
 [user]
-  name = Michael Ferguson
-  email = mpherg@gmail.com
-  signingkey = C85F1256
+	name = Michael Ferguson
+	email = mpherg@gmail.com
+	signingkey = C85F1256
 [alias]
-  st = status
-  g = log --graph --abbrev-commit --decorate --date=short --format=format:'%C(black)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%<|(80,trunc)%s %C(blue) %<(20,trunc)[%an] %C(green)[%ai]%C(reset)' --all
-  ggrep = grep --break --heading --line-number
+	st = status
+	g = log --graph --abbrev-commit --decorate --date=short --format=format:'%C(black)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%<|(80,trunc)%s %C(blue) %<(16,trunc)[%an] %C(green)[%ar]%C(reset)' --all
+	ggrep = grep --break --heading --line-number
 [credential]
-  helper = /opt/boxen/bin/boxen-git-credential
+	helper = /opt/boxen/bin/boxen-git-credential
 [core]
-  excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 	ignorecase = false
 [grep]
-  lineNumber = true
+	linenumber = true
 [push]
-  default = simple
+	default = simple
 [hub]
-  protocol = https
-#[difftool "sourcetree"]
-#  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-#  path = 
-#[mergetool "sourcetree"]
-#  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-#  trustExitCode = true
+	protocol = https
+[gpg]
+	program = /usr/local/Homebrew/bin/gpg
+[commit]
+	gpgsign = true
