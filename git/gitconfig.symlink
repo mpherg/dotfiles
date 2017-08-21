@@ -6,7 +6,7 @@
 	signingkey = C85F1256
 [alias]
 	st = status
-	g = log --graph --abbrev-commit --decorate --date=short --format=format:'%C(black)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%<|(80,trunc)%s %C(blue) %<(16,trunc)[%an] %C(green)[%ar]%C(reset)' --all
+	g = log --graph --abbrev-commit --decorate --date=short --format=format:'%C(black)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%<|(80,trunc)%s %C(blue) %<(16,trunc)[%an] %C(green)%<(15,trunc)[%ar]%C(reset)' --all
 	ggrep = grep --break --heading --line-number
 [credential]
 	helper = /opt/boxen/bin/boxen-git-credential
