@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+WIDTH=$(expr `tput cols` - 38)
+git log --graph --abbrev-commit --decorate --date=short --format=format:"%C(black)%h%C(reset)%C(yellow)%d%C(reset) %C(white)%<|($WIDTH,trunc)%s %C(blue) %<(16,trunc)[%an] %C(green)%<(15,trunc)[%ar]%C(reset)" --all
