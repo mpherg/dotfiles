@@ -3,7 +3,7 @@
 [user]
 	name = Michael Ferguson
 	email = mpherg@gmail.com
-	signingkey = C85F1256
+	signingkey = 572A1CFE
 [alias]
 	st = status
 	ggrep = grep --break --heading --line-number
