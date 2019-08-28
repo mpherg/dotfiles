@@ -8,9 +8,8 @@
 	st = status
 	ggrep = grep --break --heading --line-number
 [credential]
-	helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
 [core]
-	excludesfile = /opt/boxen/config/git/gitignore
 	ignorecase = false
 [grep]
 	linenumber = true
@@ -19,6 +18,6 @@
 [hub]
 	protocol = https
 [gpg]
-	program = /usr/local/Homebrew/bin/gpg
+	program = /usr/local/bin/gpg
 [commit]
 	gpgsign = true
