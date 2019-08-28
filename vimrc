@@ -110,11 +110,11 @@ autocmd Filetype c,cpp set comments^=:///
 " set up pencil
 augroup pencil
   autocmd!
-  " Autodetect hard/soft line breaks
-  autocmd FileType markdown,mkd,mk,tex call pencil#init()
+  " Force soft link breaks
+  autocmd FileType markdown,mkd,mk,tex call pencil#init({'wrap': 'soft'})
 
   " Force hard line breaks in text files
-  autocmd FileType text	  call pencil#init({'wrap': 'hard'})
+  autocmd FileType text call pencil#init({'wrap': 'hard'})
 augroup END
 
 " Markdown stuff
