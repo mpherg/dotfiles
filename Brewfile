@@ -1,0 +1,5 @@
+brew "cmake"
+brew "docker"
+brew "git"
+brew "gnupg"
+cask "Spectacle"
