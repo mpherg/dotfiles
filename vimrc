@@ -101,8 +101,8 @@ let g:airline_powerline_fonts = 1
 let g:gitgutter_enabled = 1
 
 " Set up clang-format
-map <C-I> :pyf ~/.vim/clang-format.py<CR>
-imap <C-I> <ESC>:pyf ~/.vim/clang-format.py<CR>
+map <C-I> :py3f ~/.vim/clang-format.py<cr>
+imap <C-I> <c-o>:py3f ~/.vim/clang-format.py<cr>
 
 " Allow doxygen triple-slash comments
 autocmd Filetype c,cpp set comments^=:///
