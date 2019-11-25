@@ -95,3 +95,6 @@ export PATH="$HOME/.dotfiles/bin:$PATH"
 # Add my SSH key to the keychain
 ssh-add -K $HOME/.ssh/id_rsa &> /dev/null
 ssh-add -A &> /dev/null
+
+# Use tty for GPG key decryption
+export GPG_TTY=$(tty)
