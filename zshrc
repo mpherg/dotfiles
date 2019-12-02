@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # Get my own bin stuff into PATH
 export PATH="$HOME/.dotfiles/bin:$PATH"
