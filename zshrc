@@ -53,9 +53,7 @@ plugins=(git)
 
 # User configuration
 
-#export PATH="/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:/opt/boxen/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
+export PATH="$HOME/.dotfiles/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
