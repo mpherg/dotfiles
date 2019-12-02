@@ -20,6 +20,6 @@
 [gpg]
 	program = /usr/local/bin/gpg
 [commit]
-	gpgsign = true
+#	gpgsign = true
 [github]
 	user = mpherg
