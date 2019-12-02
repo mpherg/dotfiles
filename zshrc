@@ -53,7 +53,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$HOME/.dotfiles/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
