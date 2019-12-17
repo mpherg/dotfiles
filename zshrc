@@ -80,9 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Get Boxen stuff working
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
 # Set JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$JAVA_HOME/bin:$PATH"
@@ -96,3 +93,9 @@ ssh-add -A &> /dev/null
 
 # Use tty for GPG key decryption
 export GPG_TTY=$(tty)
+
+# If I have non-public items, source them
+if [ -r ~/.not-public ]
+then
+  source ~/.not-public
+fi
