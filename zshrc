@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="random"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,6 +86,12 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 # Get my own bin stuff into PATH
 export PATH="$HOME/.dotfiles/bin:$PATH"
+
+# Add GNU grep to PATH
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
+# Add Clang to PATH
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # Add my SSH key to the keychain
 ssh-add -K $HOME/.ssh/id_rsa &> /dev/null
